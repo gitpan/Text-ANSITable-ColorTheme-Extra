@@ -32,6 +32,7 @@
       "runtime" : {
          "requires" : {
             "SHARYANTO::Color::Util" : "0.40",
+            "Text::ANSITable" : "0.01",
             "perl" : "5.010001"
          }
       }
@@ -43,6 +44,6 @@
          "url" : "http://github.com/sharyanto/perl-Text-ANSITable-ColorTheme-Extra"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
 
