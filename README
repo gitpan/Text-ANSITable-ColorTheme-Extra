@@ -2,7 +2,7 @@ NAME
     Text::ANSITable::ColorTheme::Extra - More color themes
 
 VERSION
-    version 0.02
+    version 0.03
 
 AUTHOR
     Steven Haryanto <stevenharyanto@gmail.com>
@@ -13,5 +13,8 @@ COPYRIGHT AND LICENSE
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.
 
+DESCRIPTION
 FUNCTIONS
+    None are exported by default, but they are exportable.
+
 INCLUDED COLOR THEMES

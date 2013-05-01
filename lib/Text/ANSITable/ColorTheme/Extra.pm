@@ -4,7 +4,7 @@ use 5.010001;
 use strict;
 use warnings;
 
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 our %color_themes = ();
 
@@ -14,13 +14,15 @@ our %color_themes = ();
 __END__
 =pod
 
+=encoding utf-8
+
 =head1 NAME
 
 Text::ANSITable::ColorTheme::Extra - More color themes
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 AUTHOR
 
@@ -33,7 +35,12 @@ This software is copyright (c) 2013 by Steven Haryanto.
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
+=head1 DESCRIPTION
+
 =head1 FUNCTIONS
+
+
+None are exported by default, but they are exportable.
 
 =head1 INCLUDED COLOR THEMES
 

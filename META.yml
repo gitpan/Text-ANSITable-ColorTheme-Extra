@@ -7,7 +7,7 @@ build_requires:
 configure_requires:
   Module::Build: 0.3601
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300015, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -20,4 +20,4 @@ requires:
 resources:
   homepage: http://metacpan.org/release/Text-ANSITable-ColorTheme-Extra
   repository: http://github.com/sharyanto/perl-Text-ANSITable-ColorTheme-Extra
-version: 0.02
+version: 0.03
