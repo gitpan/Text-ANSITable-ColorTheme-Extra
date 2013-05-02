@@ -2,7 +2,7 @@ NAME
     Text::ANSITable::ColorTheme::Extra - More color themes
 
 VERSION
-    version 0.03
+    version 0.04
 
 AUTHOR
     Steven Haryanto <stevenharyanto@gmail.com>
@@ -18,3 +18,9 @@ FUNCTIONS
     None are exported by default, but they are exportable.
 
 INCLUDED COLOR THEMES
+    *   grayscale (Grayscale)
+
+    *   reverse (Reverse)
+
+    *   sepia (Sepia tone)
+

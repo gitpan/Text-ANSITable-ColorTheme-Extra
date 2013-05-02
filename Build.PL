@@ -17,14 +17,15 @@ my %module_build_args = (
     "Steven Haryanto <stevenharyanto\@gmail.com>"
   ],
   "dist_name" => "Text-ANSITable-ColorTheme-Extra",
-  "dist_version" => "0.03",
+  "dist_version" => "0.04",
   "license" => "perl",
   "module_name" => "Text::ANSITable::ColorTheme::Extra",
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {
-    "SHARYANTO::Color::Util" => "0.40",
-    "Text::ANSITable" => "0.01",
+    "Data::Clone" => 0,
+    "SHARYANTO::Color::Util" => "0.42",
+    "Text::ANSITable::ColorTheme::Default" => "0.03",
     "perl" => "5.010001"
   },
   "script_files" => []
