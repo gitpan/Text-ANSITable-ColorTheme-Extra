@@ -22,4 +22,4 @@ requires:
 resources:
   homepage: http://metacpan.org/release/Text-ANSITable-ColorTheme-Extra
   repository: http://github.com/sharyanto/perl-Text-ANSITable-ColorTheme-Extra
-version: 0.06
+version: 0.07

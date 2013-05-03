@@ -8,7 +8,7 @@ use SHARYANTO::Color::Util qw(rgb2grayscale rgb2sepia reverse_rgb_color);
 require Text::ANSITable::ColorTheme::Default;
 require Text::ANSITable::ColorThemeUtil;
 
-our $VERSION = '0.06'; # VERSION
+our $VERSION = '0.07'; # VERSION
 
 my $defct = $Text::ANSITable::ColorTheme::Default::color_themes{default_gradation};
 
@@ -46,7 +46,7 @@ Text::ANSITable::ColorTheme::Extra - More color themes
 
 =head1 VERSION
 
-version 0.06
+version 0.07
 
 =head1 AUTHOR
 

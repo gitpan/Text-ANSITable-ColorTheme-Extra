@@ -4,7 +4,7 @@ use 5.010;
 use strict;
 use warnings;
 
-our $VERSION = '0.06'; # VERSION
+our $VERSION = '0.07'; # VERSION
 
 # create a new derived theme from a based theme by applying transforms to its
 # RGB values (ANSI colors are passed unchanged).
@@ -82,7 +82,7 @@ Text::ANSITable::ColorThemeUtil - Utility routines
 
 =head1 VERSION
 
-version 0.06
+version 0.07
 
 =for Pod::Coverage ^(.+)$
 
