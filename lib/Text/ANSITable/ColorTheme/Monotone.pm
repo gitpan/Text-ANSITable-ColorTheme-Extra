@@ -5,14 +5,14 @@ use strict;
 use warnings;
 
 use Convert::Color;
-use Text::ANSITable::ColorTheme::Default ();
-use Text::ANSITable::ColorTheme::Extra ();
+require Text::ANSITable::ColorTheme::Default;
+require Text::ANSITable::ColorThemeUtil;
 
-our $VERSION = '0.05'; # VERSION
+our $VERSION = '0.06'; # VERSION
 
 sub _make_monotone_theme {
     my ($basect, $hue) = @_;
-    Text::ANSITable::ColorTheme::Extra::_derive_theme_transform_rgb(
+    Text::ANSITable::ColorThemeUtil::derive_theme_transform_rgb(
         $basect, sub {
             $_[0] =~ /#?(..)(..)(..)/;
             my $r = hex($1);
@@ -81,7 +81,7 @@ Text::ANSITable::ColorTheme::Monotone - Monotone color themes
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 DESCRIPTION
 
