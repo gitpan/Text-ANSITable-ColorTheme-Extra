@@ -8,7 +8,7 @@ use Convert::Color;
 require Text::ANSITable;
 use Text::ANSITable::ColorThemeUtil qw(create_color_theme_transform);
 
-our $VERSION = '0.08'; # VERSION
+our $VERSION = '0.09'; # VERSION
 
 sub _make_monotone_theme {
     my ($basect, $hue) = @_;
@@ -81,7 +81,7 @@ Text::ANSITable::ColorTheme::Monotone - Monotone color themes
 
 =head1 VERSION
 
-version 0.08
+version 0.09
 
 =head1 DESCRIPTION
 

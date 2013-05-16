@@ -7,7 +7,7 @@ use warnings;
 require Text::ANSITable;
 use Text::ANSITable::ColorThemeUtil qw(create_color_theme_transform);
 
-our $VERSION = '0.08'; # VERSION
+our $VERSION = '0.09'; # VERSION
 
 my $defct = Text::ANSITable->get_color_theme("Default::default_gradation");
 
@@ -105,7 +105,7 @@ Text::ANSITable::ColorTheme::Duotone - Several duotone color themes
 
 =head1 VERSION
 
-version 0.08
+version 0.09
 
 =head1 AUTHOR
 

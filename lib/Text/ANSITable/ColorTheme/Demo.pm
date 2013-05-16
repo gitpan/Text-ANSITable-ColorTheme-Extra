@@ -6,13 +6,13 @@ use warnings;
 
 use Data::Clone;
 use SHARYANTO::Color::Util qw(rand_rgb_color mix_2_rgb_colors);
-use Text::ANSITable::ColorTheme::Default ();
+require Text::ANSITable;
 
-our $VERSION = '0.08'; # VERSION
+our $VERSION = '0.09'; # VERSION
 
 our %color_themes = ();
 
-my $defct = $Text::ANSITable::ColorTheme::Default::color_themes{default_nogradation};
+my $defct = Text::ANSITable->get_color_theme("Default::default_nogradation");
 
 {
     my $ct = clone $defct;
@@ -134,7 +134,7 @@ Text::ANSITable::ColorTheme::Demo - Demo color themes
 
 =head1 VERSION
 
-version 0.08
+version 0.09
 
 =head1 AUTHOR
 
