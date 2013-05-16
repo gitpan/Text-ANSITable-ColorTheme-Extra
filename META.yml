@@ -17,9 +17,11 @@ requires:
   Convert::Color: 0
   Data::Clone: 0
   SHARYANTO::Color::Util: 0.42
+  Text::ANSITable: 0.10
   Text::ANSITable::ColorTheme::Default: 0.03
+  Text::ANSITable::ColorThemeUtil: 0.10
   perl: 5.010001
 resources:
   homepage: http://metacpan.org/release/Text-ANSITable-ColorTheme-Extra
   repository: http://github.com/sharyanto/perl-Text-ANSITable-ColorTheme-Extra
-version: 0.07
+version: 0.08

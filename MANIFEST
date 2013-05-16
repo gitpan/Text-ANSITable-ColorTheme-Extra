@@ -11,7 +11,6 @@ lib/Text/ANSITable/ColorTheme/Demo.pm
 lib/Text/ANSITable/ColorTheme/Duotone.pm
 lib/Text/ANSITable/ColorTheme/Extra.pm
 lib/Text/ANSITable/ColorTheme/Monotone.pm
-lib/Text/ANSITable/ColorThemeUtil.pm
 t/00-compile.t
 t/release-pod-coverage.t
 t/release-pod-syntax.t

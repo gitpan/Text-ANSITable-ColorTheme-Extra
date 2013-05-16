@@ -17,7 +17,7 @@ my %module_build_args = (
     "Steven Haryanto <stevenharyanto\@gmail.com>"
   ],
   "dist_name" => "Text-ANSITable-ColorTheme-Extra",
-  "dist_version" => "0.07",
+  "dist_version" => "0.08",
   "license" => "perl",
   "module_name" => "Text::ANSITable::ColorTheme::Extra",
   "recommends" => {},
@@ -26,7 +26,9 @@ my %module_build_args = (
     "Convert::Color" => 0,
     "Data::Clone" => 0,
     "SHARYANTO::Color::Util" => "0.42",
+    "Text::ANSITable" => "0.10",
     "Text::ANSITable::ColorTheme::Default" => "0.03",
+    "Text::ANSITable::ColorThemeUtil" => "0.10",
     "perl" => "5.010001"
   },
   "script_files" => []

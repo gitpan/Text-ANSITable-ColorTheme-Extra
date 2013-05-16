@@ -5,14 +5,14 @@ use strict;
 use warnings;
 
 use Convert::Color;
-require Text::ANSITable::ColorTheme::Default;
-require Text::ANSITable::ColorThemeUtil;
+require Text::ANSITable;
+use Text::ANSITable::ColorThemeUtil qw(create_color_theme_transform);
 
-our $VERSION = '0.07'; # VERSION
+our $VERSION = '0.08'; # VERSION
 
 sub _make_monotone_theme {
     my ($basect, $hue) = @_;
-    Text::ANSITable::ColorThemeUtil::derive_theme_transform_rgb(
+    create_color_theme_transform(
         $basect, sub {
             $_[0] =~ /#?(..)(..)(..)/;
             my $r = hex($1);
@@ -25,7 +25,7 @@ sub _make_monotone_theme {
         });
 }
 
-my $defct = $Text::ANSITable::ColorTheme::Default::color_themes{default_gradation};
+my $defct = Text::ANSITable->get_color_theme("Default::default_gradation");
 
 our %color_themes = ();
 
@@ -81,7 +81,7 @@ Text::ANSITable::ColorTheme::Monotone - Monotone color themes
 
 =head1 VERSION
 
-version 0.07
+version 0.08
 
 =head1 DESCRIPTION
 
