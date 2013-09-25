@@ -8,7 +8,7 @@ use Data::Clone;
 use SHARYANTO::Color::Util qw(rand_rgb_color mix_2_rgb_colors);
 require Text::ANSITable;
 
-our $VERSION = '0.10'; # VERSION
+our $VERSION = '0.11'; # VERSION
 
 our %color_themes = ();
 
@@ -17,6 +17,7 @@ my $defct = Text::ANSITable->get_color_theme("Default::default_nogradation");
 {
     my $ct = clone $defct;
 
+    $ct->{v} = 1.1;
     $ct->{summary} = 'Demoes coderef in item color';
     $ct->{description} = <<'_';
 
@@ -38,7 +39,7 @@ _
         if ($rgbb1 && $rgbb2) {
             $rgbb = rand_rgb_color($rgbb1, $rgbb2);
         }
-        [$rgbf, $rgbb];
+        {fg=>$rgbf, bg=>$rgbb};
     };
 
     $color_themes{demo_random_border_color} = $ct;
@@ -46,10 +47,11 @@ _
 
 {
     my $ct = {
+        v => 1.1,
         summary => "Show random 8 color",
     };
     my $sub = sub {
-        "\e[".(30+int(rand()*8))."m";
+        {ansi_fg => "\e[".(30+int(rand()*8))."m"};
     };
     for my $c (keys %{ $defct->{colors} }) {
         $ct->{colors}{$c} = $sub;
@@ -59,10 +61,11 @@ _
 
 {
     my $ct = {
+        v => 1.1,
         summary => "Show random 16 color",
     };
     my $sub = sub {
-        "\e[".(30+int(rand()*8)).(rand() > 0.5 ? ";1":"")."m";
+        {ansi_fg=>"\e[".(30+int(rand()*8)).(rand() > 0.5 ? ";1":"")."m"};
     };
     for my $c (keys %{ $defct->{colors} }) {
         $ct->{colors}{$c} = $sub;
@@ -72,10 +75,11 @@ _
 
 {
     my $ct = {
+        v => 1.1,
         summary => "Show random 256 color",
     };
     my $sub = sub {
-        "\e[38;5;".int(rand()*256)."m";
+        {ansi_fg=>"\e[38;5;".int(rand()*256)."m"};
     };
     for my $c (keys %{ $defct->{colors} }) {
         $ct->{colors}{$c} = $sub;
@@ -85,6 +89,7 @@ _
 
 {
     my $ct = {
+        v => 1.1,
         summary => "Show random 24bit color",
     };
     my $sub = sub {
@@ -98,6 +103,7 @@ _
 
 {
     my $ct = {
+        v => 1.1,
         summary => "Show random color according to detected color depth",
     };
     my $sub = sub {
@@ -106,9 +112,10 @@ _
         if ($cd >= 2**24) {
             return rand_rgb_color();
         } elsif ($cd >= 256) {
-            return "\e[38;5;".int(rand()*256)."m";
+            return {ansi_fg=>"\e[38;5;".int(rand()*256)."m"};
         } elsif ($cd >= 16) {
-            return "\e[".(30+int(rand()*8)).(rand() > 0.5 ? ";1":"")."m";
+            return {ansi_fg=>"\e[".(30+int(rand()*8)).
+                        (rand() > 0.5 ? ";1":"")."m"};
         } else {
             return undef;
         }
@@ -134,7 +141,7 @@ Text::ANSITable::ColorTheme::Demo - Demo color themes
 
 =head1 VERSION
 
-version 0.10
+version 0.11
 
 =head1 AUTHOR
 

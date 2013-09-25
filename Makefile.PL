@@ -24,7 +24,7 @@ my %WriteMakefileArgs = (
     "Data::Clone" => 0,
     "SHARYANTO::Color::Util" => "0.47",
     "SHARYANTO::ColorTheme::Util" => 0,
-    "Text::ANSITable" => "0.10"
+    "Text::ANSITable" => "0.22"
   },
   "TEST_REQUIRES" => {
     "File::Spec" => 0,
@@ -32,7 +32,7 @@ my %WriteMakefileArgs = (
     "IPC::Open3" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.10",
+  "VERSION" => "0.11",
   "test" => {
     "TESTS" => "t/*.t"
   }

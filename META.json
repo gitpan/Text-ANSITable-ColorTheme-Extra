@@ -33,7 +33,7 @@
             "Data::Clone" : "0",
             "SHARYANTO::Color::Util" : "0.47",
             "SHARYANTO::ColorTheme::Util" : "0",
-            "Text::ANSITable" : "0.10",
+            "Text::ANSITable" : "0.22",
             "perl" : "5.010001"
          }
       },
@@ -53,6 +53,6 @@
          "url" : "http://github.com/sharyanto/perl-Text-ANSITable-ColorTheme-Extra"
       }
    },
-   "version" : "0.10"
+   "version" : "0.11"
 }
 
