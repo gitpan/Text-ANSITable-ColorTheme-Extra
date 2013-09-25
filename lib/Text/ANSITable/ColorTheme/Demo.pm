@@ -8,7 +8,7 @@ use Data::Clone;
 use SHARYANTO::Color::Util qw(rand_rgb_color mix_2_rgb_colors);
 require Text::ANSITable;
 
-our $VERSION = '0.09'; # VERSION
+our $VERSION = '0.10'; # VERSION
 
 our %color_themes = ();
 
@@ -122,8 +122,8 @@ _
 1;
 # ABSTRACT: Demo color themes
 
-
 __END__
+
 =pod
 
 =encoding utf-8
@@ -134,7 +134,7 @@ Text::ANSITable::ColorTheme::Demo - Demo color themes
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 AUTHOR
 
@@ -182,4 +182,3 @@ colors.
 =back
 
 =cut
-

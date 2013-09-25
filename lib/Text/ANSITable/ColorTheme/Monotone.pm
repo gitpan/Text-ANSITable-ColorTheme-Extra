@@ -5,10 +5,10 @@ use strict;
 use warnings;
 
 use Convert::Color;
+use SHARYANTO::ColorTheme::Util qw(create_color_theme_transform);
 require Text::ANSITable;
-use Text::ANSITable::ColorThemeUtil qw(create_color_theme_transform);
 
-our $VERSION = '0.09'; # VERSION
+our $VERSION = '0.10'; # VERSION
 
 sub _make_monotone_theme {
     my ($basect, $hue) = @_;
@@ -68,9 +68,8 @@ our %color_themes = ();
 1;
 # ABSTRACT: Monotone color themes
 
-
-
 __END__
+
 =pod
 
 =encoding utf-8
@@ -81,7 +80,7 @@ Text::ANSITable::ColorTheme::Monotone - Monotone color themes
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 DESCRIPTION
 
@@ -123,4 +122,3 @@ None are exported by default, but they are exportable.
 =back
 
 =cut
-

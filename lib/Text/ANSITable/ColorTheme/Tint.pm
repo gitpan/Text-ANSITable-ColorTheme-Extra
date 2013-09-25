@@ -6,10 +6,10 @@ use warnings;
 
 use Data::Clone;
 use SHARYANTO::Color::Util qw(tint_rgb_color);
+use SHARYANTO::ColorTheme::Util qw(create_color_theme_transform);
 require Text::ANSITable;
-use Text::ANSITable::ColorThemeUtil qw(create_color_theme_transform);
 
-our $VERSION = '0.09'; # VERSION
+our $VERSION = '0.10'; # VERSION
 
 our %color_themes = ();
 
@@ -76,6 +76,7 @@ $defct->{colors}{str_data} = '7f7f7f';
 # ABSTRACT: Several tinted color themes
 
 __END__
+
 =pod
 
 =encoding utf-8
@@ -86,7 +87,7 @@ Text::ANSITable::ColorTheme::Tint - Several tinted color themes
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 AUTHOR
 
@@ -129,4 +130,3 @@ None are exported by default, but they are exportable.
 =back
 
 =cut
-

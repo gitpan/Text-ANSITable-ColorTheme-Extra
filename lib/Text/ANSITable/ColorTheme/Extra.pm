@@ -5,10 +5,10 @@ use strict;
 use warnings;
 
 use SHARYANTO::Color::Util qw(rgb2grayscale rgb2sepia reverse_rgb_color);
+use SHARYANTO::ColorTheme::Util qw(create_color_theme_transform);
 require Text::ANSITable;
-use Text::ANSITable::ColorThemeUtil qw(create_color_theme_transform);
 
-our $VERSION = '0.09'; # VERSION
+our $VERSION = '0.10'; # VERSION
 
 my $defct = Text::ANSITable->get_color_theme("Default::default_gradation");
 
@@ -36,6 +36,7 @@ our %color_themes = ();
 # ABSTRACT: More color themes
 
 __END__
+
 =pod
 
 =encoding utf-8
@@ -46,7 +47,7 @@ Text::ANSITable::ColorTheme::Extra - More color themes
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 AUTHOR
 
@@ -79,4 +80,3 @@ None are exported by default, but they are exportable.
 =back
 
 =cut
-
