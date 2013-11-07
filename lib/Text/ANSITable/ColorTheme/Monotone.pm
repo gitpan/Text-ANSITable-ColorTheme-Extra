@@ -8,7 +8,7 @@ use Convert::Color;
 use SHARYANTO::ColorTheme::Util qw(create_color_theme_transform);
 require Text::ANSITable;
 
-our $VERSION = '0.11'; # VERSION
+our $VERSION = '0.12'; # VERSION
 
 sub _make_monotone_theme {
     my ($basect, $hue) = @_;
@@ -88,12 +88,35 @@ Text::ANSITable::ColorTheme::Monotone - Monotone color themes
 
 =head1 VERSION
 
-version 0.11
+version 0.12
 
 =head1 DESCRIPTION
 
 Monotone themes uses single-hue colors, differing only in saturation and
 lightness/value.
+
+=head1 FUNCTIONS
+
+
+None are exported by default, but they are exportable.
+
+=head1 HOMEPAGE
+
+Please visit the project's homepage at L<https://metacpan.org/release/Text-ANSITable-ColorTheme-Extra>.
+
+=head1 SOURCE
+
+Source repository is at L<HASH(0x33b94c0)>.
+
+=head1 BUGS
+
+Please report any bugs or feature requests on the bugtracker website
+https://rt.cpan.org/Public/Dist/Display.html?Name=Text-ANSITable-ColorTheme
+-Extra
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
 
 =head1 AUTHOR
 
@@ -105,11 +128,6 @@ This software is copyright (c) 2013 by Steven Haryanto.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
-
-=head1 FUNCTIONS
-
-
-None are exported by default, but they are exportable.
 
 =head1 INCLUDED COLOR THEMES
 

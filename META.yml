@@ -10,7 +10,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.132140'
+generated_by: 'Dist::Zilla version 4.300038, CPAN::Meta::Converter version 2.132510'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -24,6 +24,7 @@ requires:
   Text::ANSITable: 0.22
   perl: 5.010001
 resources:
-  homepage: http://metacpan.org/release/Text-ANSITable-ColorTheme-Extra
-  repository: http://github.com/sharyanto/perl-Text-ANSITable-ColorTheme-Extra
-version: 0.11
+  bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Text-ANSITable-ColorTheme-Extra
+  homepage: https://metacpan.org/release/Text-ANSITable-ColorTheme-Extra
+  repository: git://github.com/sharyanto/perl-Text-ANSITable-ColorTheme-Extra.git
+version: 0.12

@@ -2,7 +2,26 @@ NAME
     Text::ANSITable::ColorTheme::Extra - More color themes
 
 VERSION
-    version 0.11
+    version 0.12
+
+DESCRIPTION
+FUNCTIONS
+    None are exported by default, but they are exportable.
+
+HOMEPAGE
+    Please visit the project's homepage at
+    <https://metacpan.org/release/Text-ANSITable-ColorTheme-Extra>.
+
+SOURCE
+    Source repository is at HASH(0x33b94c0).
+
+BUGS
+    Please report any bugs or feature requests on the bugtracker website
+    https://rt.cpan.org/Public/Dist/Display.html?Name=Text-ANSITable-ColorTh
+    eme -Extra
+
+    When submitting a bug or request, please include a test-file or a patch
+    to an existing test-file that illustrates the bug or desired feature.
 
 AUTHOR
     Steven Haryanto <stevenharyanto@gmail.com>
@@ -12,10 +31,6 @@ COPYRIGHT AND LICENSE
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.
-
-DESCRIPTION
-FUNCTIONS
-    None are exported by default, but they are exportable.
 
 INCLUDED COLOR THEMES
     *   grayscale (Grayscale)

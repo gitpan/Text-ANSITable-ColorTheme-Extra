@@ -4,7 +4,7 @@
       "Steven Haryanto <stevenharyanto@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.132140",
+   "generated_by" : "Dist::Zilla version 4.300038, CPAN::Meta::Converter version 2.132510",
    "license" : [
       "perl_5"
    ],
@@ -48,11 +48,16 @@
    },
    "release_status" : "stable",
    "resources" : {
-      "homepage" : "http://metacpan.org/release/Text-ANSITable-ColorTheme-Extra",
+      "bugtracker" : {
+         "web" : "https://rt.cpan.org/Public/Dist/Display.html?Name=Text-ANSITable-ColorTheme-Extra"
+      },
+      "homepage" : "https://metacpan.org/release/Text-ANSITable-ColorTheme-Extra",
       "repository" : {
-         "url" : "http://github.com/sharyanto/perl-Text-ANSITable-ColorTheme-Extra"
+         "type" : "git",
+         "url" : "git://github.com/sharyanto/perl-Text-ANSITable-ColorTheme-Extra.git",
+         "web" : "https://github.com/sharyanto/perl-Text-ANSITable-ColorTheme-Extra"
       }
    },
-   "version" : "0.11"
+   "version" : "0.12"
 }
 
