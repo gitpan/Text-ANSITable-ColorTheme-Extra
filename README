@@ -2,7 +2,9 @@ NAME
     Text::ANSITable::ColorTheme::Extra - More color themes
 
 VERSION
-    version 0.13
+    This document describes version 0.14 of
+    Text::ANSITable::ColorTheme::Extra (from Perl distribution
+    Text-ANSITable-ColorTheme-Extra), released on 2014-12-11.
 
 HOMEPAGE
     Please visit the project's homepage at
@@ -10,7 +12,7 @@ HOMEPAGE
 
 SOURCE
     Source repository is at
-    <https://github.com/sharyanto/perl-Text-ANSITable-ColorTheme-Extra>.
+    <https://github.com/perlancar/perl-Text-ANSITable-ColorTheme-Extra>.
 
 BUGS
     Please report any bugs or feature requests on the bugtracker website
@@ -21,10 +23,10 @@ BUGS
     to an existing test-file that illustrates the bug or desired feature.
 
 AUTHOR
-    Steven Haryanto <stevenharyanto@gmail.com>
+    perlancar <perlancar@cpan.org>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2014 by Steven Haryanto.
+    This software is copyright (c) 2014 by perlancar@cpan.org.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.

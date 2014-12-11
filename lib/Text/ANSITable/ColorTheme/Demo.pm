@@ -1,14 +1,15 @@
 package Text::ANSITable::ColorTheme::Demo;
 
+our $DATE = '2014-12-11'; # DATE
+our $VERSION = '0.14'; # VERSION
+
 use 5.010;
 use strict;
 use warnings;
 
 use Data::Clone;
-use SHARYANTO::Color::Util qw(rand_rgb_color mix_2_rgb_colors);
+use Color::RGB::Util qw(rand_rgb_color mix_2_rgb_colors);
 require Text::ANSITable;
-
-our $VERSION = '0.13'; # VERSION
 
 our %color_themes = ();
 
@@ -141,7 +142,7 @@ Text::ANSITable::ColorTheme::Demo - Demo color themes
 
 =head1 VERSION
 
-version 0.13
+This document describes version 0.14 of Text::ANSITable::ColorTheme::Demo (from Perl distribution Text-ANSITable-ColorTheme-Extra), released on 2014-12-11.
 
 =head1 HOMEPAGE
 
@@ -149,7 +150,7 @@ Please visit the project's homepage at L<https://metacpan.org/release/Text-ANSIT
 
 =head1 SOURCE
 
-Source repository is at L<https://github.com/sharyanto/perl-Text-ANSITable-ColorTheme-Extra>.
+Source repository is at L<https://github.com/perlancar/perl-Text-ANSITable-ColorTheme-Extra>.
 
 =head1 BUGS
 
@@ -161,11 +162,11 @@ feature.
 
 =head1 AUTHOR
 
-Steven Haryanto <stevenharyanto@gmail.com>
+perlancar <perlancar@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Steven Haryanto.
+This software is copyright (c) 2014 by perlancar@cpan.org.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
